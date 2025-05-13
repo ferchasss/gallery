@@ -18,7 +18,7 @@
 @layer components {
   .box {
   
-    @apply bg-pink-950 text-white rounded-md flex items-center justify-center overflow-hidden border border-dashed border-gray-300 col-span-1 row-span-1 aspect-square p-2 transition-all duration-300;
+    @apply  text-white rounded-md flex items-center justify-center overflow-hidden border border-dashed border-gray-300 col-span-1 row-span-1 aspect-square p-2 transition-all duration-300;
 
   }
 
