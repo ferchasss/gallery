@@ -1,5 +1,5 @@
 import './style.css'
-import {ImageGallery} from '.imageService.js';
+import ImageGallery from './imageGallery.js';
 class SearchForm {
     constructor() {
       this.form = document.getElementById('searchForm');
@@ -11,8 +11,10 @@ class SearchForm {
     }
   
     initializeEventListeners() {
-      this.form.addEventListener('submit', () => this.handleSubmit(this));
-      this.input.addEventListener('input', () => this.handleInput(this));
+      this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+      this.input.addEventListener('input', (e) => this.handleInput(e));
+      this.form.addEventListener('submit', (event) => this.handleSubmit(event));
+      this.input.addEventListener('input', (event) => this.handleInput(event));
     }
   
     async handleSubmit(e) {
